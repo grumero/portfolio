@@ -1,0 +1,26 @@
+# Site settings
+title: Bitwerker
+description: Web Development // FileMaker Pro // Mac Support
+email: ps@bitwerker.de
+
+# Change the site default images and content
+logo: logo.svg
+bg-img: siteimage.jpg
+avatar: avatar.jpg
+
+blurb: <p><strong>Coding for the user. </strong>Development für das <a href="#">Mobile Web</a> und Mobile Apps mit Focus auf Benutzerfreudlichkeit und <a href="#">funktionales UX-Design</a>.</p>
+
+
+
+
+
+# Build settings
+
+markdown: kramdown
+permalink: pretty
+
+port: 3000
+
+sass:
+  sass_dir: assets/css
+  style: :nested
