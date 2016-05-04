@@ -1,14 +1,15 @@
 header
-	height: 450px
 	@extend %bg-img
+	height: 450px
 	background-position: 30px 20px, bottom center
+	background-image: url(/assets/img/#{$logo-path}), url(/assets/img/#{$hero-path})
 
 	nav
 		float: right
 		margin: 30px 30px 0 0
 
 		a
-			+inline-block
+			display: inline-block
 			margin-left: 20px
 			color: rgba(0,0,0,0.7)
 			@extend %upper14
@@ -30,7 +31,7 @@ header
 		padding-top: 100px
 
 		span
-			+inline-block
+			display: inline-block
 			padding: 0.2em 0.5em
 			border: white solid 10px
 

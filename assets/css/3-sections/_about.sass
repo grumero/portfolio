@@ -7,14 +7,17 @@
 
 
 	.face-img
-		+size(200px)
 		border-radius: 50%
+		background-size: cover
+		background-position: center
+		background-image: url(/assets/img/#{$avatar-path})
+		+size(200px)
 		+order(3)
 
 	[class^="icon-"]
 		+size(100px)
 		border-radius: 50%
-		background: $bgColor
+		background: $bgcolor
 
 		path
 			fill: $accent
@@ -34,18 +37,16 @@
 		text-align: center
 
 		div
-			+inline-block
+			display: inline-block
 
 		.face-img
 			display: block
 			background-position: center center
 			background-repeat: no-repeat
-			width: auto
-			margin-bottom: 0 auto 30px
+			margin: 0 auto 30px
 
 		[class^="icon-"]
 			margin: 10px
-
 
 .blurb
 	max-width: 620px
@@ -57,13 +58,15 @@
 
 
 .skill-lockup
-	max-width: 520px
+	max-width: 540px
 	margin: 100px auto
 	color: #999
+	+clearfix
 
 	.skill-unit
-		display: inline-block
-		width: 258px
+		// display: inline-block
+		float: left
+		width: 270px
 
 	.skill-icons
 		margin: 2px 0 30px
@@ -72,7 +75,7 @@
 			display: inline-block
 			+size(14px)
 			background-color: $accent
-			margin-right: 8px
+			margin-right: 6px
 			border-radius: 50%
 
 			&:after
@@ -88,11 +91,11 @@
 				@extend %skill-color
 
 %skill-color
-	background: $bgColor
+	background: $bgcolor
 
-@media screen and (max-width: 521px)
+@media screen and (max-width: 541px)
 	.skill-lockup
-		width: 220px
+		width: 250px
 
 	.skill-unit
-		width: 220px
+		width: 250px

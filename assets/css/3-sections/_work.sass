@@ -1,0 +1,63 @@
+.alt-section
+	background: $bgcolor
+
+.thumb-container
+	max-width: 960px
+	margin: 0 auto
+	padding-bottom: 100px
+	+clearfix
+
+	.thumb-unit
+		display: block
+		width: 25%
+		float: left
+		position: relative
+		padding-top: 16%
+		overflow: hidden
+
+		@media screen and (max-width: 760px)
+			width: 50%
+			padding-top: 26%
+
+		background:
+			//image: url(/assets/img/work/proj-1/thumb.jpg)
+			position: center center
+			repeat: no-repeat
+			size: cover
+
+		.thumb-overlay
+			+position(absolute, 100% 0px 0px 0px)
+			height: 100%
+			background: fade-out($accent, 0.1)
+			text-align: center
+			+transition
+			+display(flex)
+			+align-items(center)
+			+justify-content(space-around)
+
+			strong
+				display: block
+				padding: 0px 20px
+				color: white
+				font-weight: 300
+				text-transform: uppercase
+				font-size: 20px
+				line-height: 1.2
+
+			.icon-zoom
+				+size(40px)
+				margin: 0px auto
+
+				svg
+					+size(40px)
+
+				path
+					fill: white
+
+
+		&:hover .thumb-overlay
+			top: 0%
+
+
+
+
