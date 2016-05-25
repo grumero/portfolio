@@ -1,0 +1,38 @@
+---
+---
+///////////////////////
+//
+// Variables
+//
+///////////////////////
+//------------------------------------------------
+// Transition the image paths from the settings file to usable SASS variables
+$animation: {{ site.data.settings.animation }}
+$logo-path: '{{ site.data.settings.logo }}'
+$hero-path: '{{ site.data.settings.background-image }}'
+$avatar-path: '{{ site.data.settings.avatar }}'
+
+//------------------------------------------------
+// Get the colors definde in settings.yml to usable SASS variables
+$accent: {{ site.data.settings.accent }}
+$accent-light: {{ site.data.settings.accent-light }}
+$bgcolor: {{ site.data.settings.bgcolor }}
+$documentBackgroundColor: {{ site.data.settings.documentBackgroundColor }}
+$headlineColor: {{ site.data.settings.headlineColor }}
+$textColor: {{ site.data.settings.textColor }}
+$linkColor: {{ site.data.settings.linkColor }}
+$selectionColor: {{ site.data.settings.selectionColor }}
+
+// Projects for the work section - showcase
+//------------------------------------------------
+$projects: "proj-1", "proj-2", "proj-3", "proj-4", "proj-5", "proj-6", "proj-7", "proj-8"
+
+///////////////////////////
+//
+// SASS IMPORTS
+//
+///////////////////////////
+
+@import '1-tools/-tools-dir'
+@import '2-base/-base-dir'
+@import '3-sections/-sections-dir'

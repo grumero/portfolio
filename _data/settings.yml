@@ -4,12 +4,31 @@ title: Bitwerker
 description: Web Development // FileMaker Pro // Mac Support
 email: ps@bitwerker.de
 
+# -------------------------------------
 # Images
 logo: "logo.svg"
-bg-img: "siteimage.jpg"
+background-image: "siteimage.jpg"
 avatar: "avatar.jpg"
 
+# -------------------------------------
+# Colors
+accent: "#c99065"
+accent-light: "#e1c184"
+bgcolor: "#e5eaee"
+documentBackgroundColor: "#fff"
+headlineColor: "#333"
+textColor: "#666"
+linkColor: "#c99065"
+selectionColor: "#ffff9e"
 
+# -------------------------------------
+# Animation for project thumbnails
+# Choose from the following possible values:  
+# none ; backgroundIn ; bottomDoor ; bottomUp ; bounceOut ; swell
+# fadeIn ; leftRight ; rightLeft ; textSlide ; topDoor ; topDown
+animation: "swell"
+
+# -------------------------------------
 # Menue Items
 menu:
 - {name: About Me, url: '#about-me'}
@@ -20,11 +39,15 @@ menu:
 
 #-------------------------------
 # About Section
+blurb: >
+  **Travis specializes in making things** for human people.
+  Most of the things he makes are [digital interfaces](http://travisneilson.com), 
+  but he also puts effort into crafting [next-level beats](http://soundcloud.com/travis-neilson) 
+  and [YouTube videos](http://youtube.com/user/devtipsfordesigners) about making codes happen.
 
-blurb: <p><strong>Coding for the user. </strong>Development für das <a href="#">Mobile Web</a> und Mobile Apps mit Focus auf Benutzerfreudlichkeit und <a href="#">funktionales UX-Design</a>.</p>
 
+# -------------------------------------
 # SKILL LIST Entries
-
 skills:
 - {name: Communication, value: '9'}
 - {name: Organization, value: '7'}
@@ -35,15 +58,73 @@ skills:
 - {name: UX Design, value: '8'}
 - {name: Programming, value: '6'}
 
-
+# -------------------------------------
 # WORKS SECTION - projects showcase
-
 projects:
-- {name: First One, folder: 'proj-1'}
-- {name: Second, folder: 'proj-2'}
-- {name: Third, folder: 'proj-3'}
-- {name: Fourth, folder: 'proj-4'}
-- {name: Fifth, folder: 'proj-5'}
-- {name: Sixth, folder: 'proj-6'}
-- {name: Seventh, folder: 'proj-7'}
-- {name: Pro Eight, folder: 'proj-8'}
+- {name: TYPO International Design Talks, folder: 'proj-1'}
+- {name: City-IN website concept, folder: 'proj-2'}
+- {name: Crispy Icons, folder: 'proj-3'}
+- {name: Flat Mobile UI/UX Concept, folder: 'proj-4'}
+- {name: Fresh It Up, folder: 'proj-5'}
+- {name: Timeline Page, folder: 'proj-6'}
+- {name: Weather Dashboard, folder: 'proj-7'}
+- {name: Stripes & Co, folder: 'proj-8'}
+
+
+# -------------------------------------
+# CLIENTS SECTION
+clients:
+- {avatar: 'face-aaroni.jpg',
+  name: 'Scott Summers',
+  title: 'Director of Design, OnToText Ind.',
+  quote: '<p><strong>While we all felt that Travis was a great</strong> asset to our team — and really worked hard to understand our products from the point of view of the customer — we also all agree he should shower more often.</p>',
+  logo: 'logo1.png'}
+- {avatar: 'face-atariboy.jpg',
+  name: 'Hank McCoy',
+  title: 'Eater of Salad, Antartica Int.',
+  quote: '<p><strong>Working with Travis was the highlight of my career.</strong> Other moments of note were collecting the largest number of paperclips in the office, and winning a trophy for saying "uh huh, and then what?" 30 times in a row to my girlfriend without her noticing.</p>',
+  logo: 'logo2.png'}
+- {avatar: 'face-jackiesaik.jpg',
+  name: 'Stacy Lang',
+  title: 'Social Media Girl, Quebec Int.',
+  quote: '<p><strong>Yea, I guess hes good at computers or something,</strong> but let me ask you this: If a cat always lands on its feet, and buttered bread always lands butter side down, what would happen if you tied buttered bread on top of a cat?</p>',
+  logo: 'logo3.png'}
+- {avatar: 'face-teleject.jpg',
+  name: 'Cleatus Cassidy',
+  title: 'VP of Helmut, Lorem Sorem LLC.',
+  quote: '<p><strong>Back in old country</strong> only nerds who is playing on computers. Now all bros is wanting to make codes and junk. I lost foot in war. You dont see girls asking me about homework.</p>',
+  logo: 'logo4.png'}
+
+#-------------------------------
+# Contact Section
+# social network icons available:
+# 'codepen' / 'facebook' / 'facebook-square' / 'facebook-official' / 'linkedin' / 'linkedin-square' / 
+# 'github' / 'github-square' / 'twitter' / 'twitter-square' / 'pinterest' / 'pinterest-square' / 
+# 'google-plus' / 'google-plus-square' / 'google-plus-circle' / 'google-plus-official' / 
+# 'youtube-square' / 'youtube' / 'xing' / 'xing-square' / 'youtube-play' / 'instagram' / 'dribbble' / 
+# 'vimeo-square' / 'behance' / 'behance-square' / 'soundcloud' / 'vine' / 'vimeo' / '
+
+social:
+- {icon: 'linkedin', link: 'https://de.linkedin.com/in/bitwerker'}
+- {icon: 'xing', link: 'https://www.xing.com/profile/Peter_Schraufstetter'}
+- {icon: 'github', link: 'http://twitter.com/devtipsshow'}
+- {icon: 'twitter', link: 'https://www.youtube.com/DevTipsForDesigners'}
+- {icon: 'codepen', link: 'http://codepen.io/grumero/'}
+
+
+# social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
+
+
+
+
+
+#----------------------------------
+# Fall backs for JS disabled users
+projectNoscript: >
+  **You do not have JavaScript enabled...But Why?**  
+
+  There is no good reason to **NOT**, but alas, here we are.
+  I hope this illustrates to you that I am concerned with usability.
+  For the "special" people out there who browse without it, I take note!
+
+# <img src="/assets/img/work/proj-2/CityIn-AntonSkvortsov.jpg" /> 

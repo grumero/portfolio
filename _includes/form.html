@@ -1,0 +1,46 @@
+<section nachricht>
+	
+	<h3>Get in touch...</h3>
+
+	<!-- <form id="contact-form"  method="POST">   wenn es über JS gemacht werden sollte -->
+	
+	<form id="contact-form"  method="POST">
+	<!-- <form id="contactform"  action="https://formspree.io/{{ site.data.settings.email }}" method="POST"> -->
+			
+			<div class="contact-info-group">
+
+				<label><span>Name</span>
+		    <input type="text" name="name" required placeholder="Ihre Name"></label>
+
+				<label><span>Email</span>
+		    <input type="email" name="_replyto" required placeholder="Ihre Email-Adresse"></label>
+
+	    </div>
+
+			<label><span>Nachricht</span>
+	    <textarea name="message" rows="8" required placeholder="Ihre Nachricht"></textarea></label>
+
+			<!-- Hidden field für redirect nach senden über formspree -->
+	    <input type="hidden" name="_next" value="//localhost:3000/#contact" />
+
+	    <input type="text" name="_gotcha" style="display:none" />
+
+	    <div class="submit-wrap">
+		    <input id="sendbutton" type="submit" value="Send">
+	    </div>
+
+	</form>
+
+			<!-- Hidden message to show if contact is successful. -->
+	    <div id="submit-success" class="sendresponse">
+			  Ihre Nachricht wurde erfolgreich versendet!
+			</div>
+
+			<!-- Hidden message to show if user encounters errors. -->
+			<div id="submit-errors" class="sendresponse">
+			  Es gab einen Fehler beim Versenden.<br>
+			  Bitte versuchen Sie es später noch einmal.
+			</div>
+
+</section>
+
